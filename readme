@@ -1,0 +1,15 @@
+bytewavee/
+├── index.html         # Main HTML file
+├── styles.css         # CSS file
+├── script.js          # JavaScript file
+├── images/            # Folder for images
+│   ├── logo.png       # ByteWavee logo
+│   ├── home-banner.jpg # New image for Homepage
+│   ├── challenge-banner.jpg # Image for Challenges section
+│   ├── easy-banner.jpg # Image for We Make IT Easy section
+│   ├── alex.jpg       # Team member image
+│   ├── priya.jpg      # Team member image
+│   ├── liam.jpg       # Team member image
+│   ├── sophie.jpg     # Team member image
+│   ├── omar.jpg       # Team member image
+│   └── ebook.pdf      # Free eBook file
