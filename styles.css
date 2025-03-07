@@ -97,76 +97,44 @@ p {
 
 /* Homepage */
 #home {
-    background: linear-gradient(135deg, #e5e7eb 0%, #f3f4f6 100%);
-    padding: 3rem 2rem;
+    background: linear-gradient(to right, #1e3a8a, #3b82f6);
+    color: white;
+    text-align: center;
+    position: relative;
 }
 
-.home-container {
+.banner {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+#home h2 {
+    color: white;
+    font-size: 2.5rem;
+}
+
+#home .highlights {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
-    background-color: #ffffff;
-    border-radius: 15px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    padding: 2.5rem;
-    overflow: hidden;
+    justify-content: space-around;
+    margin-top: 2rem;
     flex-wrap: wrap;
 }
 
-.home-text {
+#home .highlights div {
     flex: 1;
-    min-width: 300px;
-    padding-right: 2rem;
+    min-width: 200px;
+    margin: 1rem;
 }
 
-.home-text h2 {
-    color: #1e40af;
-    font-size: 2.8rem;
-    font-weight: 700;
-    margin-bottom: 1.5rem;
-    text-align: left;
-    line-height: 1.2;
+.risk-btn {
+    background-color: #10b981;
+    margin-left: 1rem;
 }
 
-.home-text p {
-    color: #6b7280;
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
-    text-align: left;
-    line-height: 1.6;
-}
-
-.home-btn {
-    display: inline-block;
-    background-color: #3b82f6;
-    color: white;
-    padding: 0.9rem 2rem;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 6px rgba(59, 130, 246, 0.3);
-}
-
-.home-btn:hover {
-    background-color: #2563eb;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(59, 130, 246, 0.4);
-}
-
-.home-image {
-    flex: 1;
-    min-width: 300px;
-    text-align: right;
-}
-
-.home-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.risk-btn:hover {
+    background-color: #059669;
 }
 
 /* Challenges Section */
@@ -319,11 +287,6 @@ p {
     line-height: 1.6;
 }
 
-.highlight {
-    color: #ef4444; /* Red for emphasis */
-    font-weight: 600;
-}
-
 .easy-btn {
     display: inline-block;
     background-color: #3b82f6;
@@ -349,6 +312,80 @@ p {
 }
 
 .easy-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Cyber Resilience Section */
+#resilience {
+    background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+    padding: 3rem 2rem;
+}
+
+.resilience-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 2.5rem;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+.resilience-text {
+    flex: 1;
+    min-width: 300px;
+    padding-right: 2rem;
+}
+
+.resilience-text h2 {
+    color: #1e40af;
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-align: left;
+    line-height: 1.2;
+}
+
+.resilience-text p {
+    color: #6b7280;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    text-align: left;
+    line-height: 1.6;
+}
+
+.resilience-btn {
+    display: inline-block;
+    background-color: #3b82f6;
+    color: white;
+    padding: 0.9rem 2rem;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(59, 130, 246, 0.3);
+}
+
+.resilience-btn:hover {
+    background-color: #2563eb;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(59, 130, 246, 0.4);
+}
+
+.resilience-image {
+    flex: 1;
+    min-width: 300px;
+    text-align: right;
+}
+
+.resilience-image img {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
@@ -519,16 +556,20 @@ footer a {
         text-align: center;
     }
 
-    .home-container, .challenge-container, .easy-container {
+    #home h2 {
+        font-size: 1.8rem;
+    }
+
+    .challenge-container, .easy-container, .resilience-container {
         flex-direction: column;
         text-align: center;
     }
 
-    .home-text, .challenge-text, .easy-text {
+    .challenge-text, .easy-text, .resilience-text {
         padding-right: 0;
     }
 
-    .home-image, .challenge-image, .easy-image {
+    .challenge-image, .easy-image, .resilience-image {
         text-align: center;
         margin-top: 2rem;
     }
@@ -546,11 +587,11 @@ footer a {
         width: 100%;
     }
 
-    .home-text h2, .challenge-text h2, .easy-text h2 {
+    .challenge-text h2, .easy-text h2, .resilience-text h2 {
         font-size: 2.2rem;
     }
 
-    .home-text p, .challenge-list li, .easy-text p {
+    .challenge-list li, .easy-text p, .resilience-text p {
         font-size: 1rem;
     }
 }
