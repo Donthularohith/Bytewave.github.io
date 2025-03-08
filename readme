@@ -1,12 +1,20 @@
 bytewavee/
 ├── index.html         # Main HTML file
+├── services/          # Directory for service pages
+│   ├── it-services.html
+│   ├── cybersecurity.html
+│   ├── web-development.html
+│   ├── remote-it-services.html
+│   ├── cloud-computing.html
+│   ├── risk-assessment.html
 ├── styles.css         # CSS file
 ├── script.js          # JavaScript file
 ├── images/            # Folder for images
-│   ├── logo.png       # ByteWavee logo
-│   ├── home-banner.jpg # New image for Homepage
+│   ├── logo.png       # ByteWavee Logo
+│   ├── banner.jpg     # Homepage banner
 │   ├── challenge-banner.jpg # Image for Challenges section
 │   ├── easy-banner.jpg # Image for We Make IT Easy section
+│   ├── resilience-banner.jpg # Image for Cyber Resilience section
 │   ├── alex.jpg       # Team member image
 │   ├── priya.jpg      # Team member image
 │   ├── liam.jpg       # Team member image

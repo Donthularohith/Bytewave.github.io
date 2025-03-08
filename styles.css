@@ -41,25 +41,34 @@ nav {
     margin-right: 1rem;
 }
 
-nav ul {
+.menu-toggle {
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+    padding: 0.5rem;
+}
+
+.nav-menu {
     list-style: none;
     display: flex;
     gap: 2rem;
     position: relative;
 }
 
-nav ul li {
+.nav-menu li {
     position: relative;
 }
 
-nav ul li a {
+.nav-menu li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
 }
 
-nav ul li a:hover {
+.nav-menu li a:hover {
     color: #f97316;
 }
 
@@ -90,6 +99,7 @@ nav ul li a:hover {
     text-decoration: none;
     display: block;
     transition: background-color 0.3s;
+    font-size: 0.9rem;
 }
 
 .dropdown-content a:hover {
@@ -102,24 +112,26 @@ nav ul li a:hover {
 
 .nav-contact {
     font-size: 0.9rem;
+    text-align: right;
 }
 
 /* Sections */
 section {
-    padding: 4rem 2rem;
+    padding: 2rem 1rem;
     max-width: 1200px;
     margin: 0 auto;
 }
 
 h2 {
     color: #1e3a8a;
-    margin-bottom: 1.5rem;
-    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
     text-align: center;
 }
 
 p {
     margin-bottom: 1rem;
+    font-size: 1rem;
 }
 
 .cta-btn {
@@ -131,6 +143,9 @@ p {
     border-radius: 5px;
     font-weight: bold;
     transition: background-color 0.3s;
+    font-size: 1rem;
+    min-width: 150px;
+    text-align: center;
 }
 
 .cta-btn:hover {
@@ -143,36 +158,38 @@ p {
     color: white;
     text-align: center;
     position: relative;
+    padding: 1.5rem 0.5rem;
 }
 
 .banner {
     width: 100%;
-    max-height: 300px;
+    max-height: 200px;
     object-fit: cover;
     margin-bottom: 1rem;
 }
 
 #home h2 {
     color: white;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
 }
 
 #home .highlights {
     display: flex;
-    justify-content: space-around;
-    margin-top: 2rem;
-    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 1rem;
+    text-align: center;
 }
 
 #home .highlights div {
-    flex: 1;
-    min-width: 200px;
-    margin: 1rem;
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
 }
 
 .risk-btn {
     background-color: #10b981;
-    margin-left: 1rem;
+    margin-left: 0;
+    margin-top: 0.5rem;
+    display: block;
 }
 
 .risk-btn:hover {
@@ -182,294 +199,294 @@ p {
 /* Challenges Section */
 #challenges {
     background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
-    padding: 3rem 2rem;
+    padding: 1.5rem 0.5rem;
 }
 
 .challenge-container {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
     background-color: #ffffff;
-    border-radius: 15px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
     overflow: hidden;
-    flex-wrap: wrap;
 }
 
 .challenge-text {
-    flex: 1;
-    min-width: 300px;
-    padding-right: 2rem;
+    padding-right: 0;
+    margin-bottom: 1rem;
 }
 
 .challenge-text h2 {
     color: #3b82f6;
-    font-size: 2.8rem;
+    font-size: 1.8rem;
     font-weight: 700;
-    margin-bottom: 1.5rem;
-    text-align: left;
+    margin-bottom: 1rem;
+    text-align: center;
     line-height: 1.2;
 }
 
 .challenge-list {
     list-style: none;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .challenge-list li {
     color: #6b7280;
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
     display: flex;
     align-items: center;
-    transition: all 0.3s ease;
-    padding: 0.5rem 1rem;
-    border-radius: 8px;
+    padding: 0.5rem;
+    border-radius: 5px;
 }
 
 .challenge-list li:hover {
     background-color: #e0f2fe;
-    transform: scale(1.05);
+    transform: scale(1.02);
     color: #1e3a8a;
 }
 
 .check-icon {
     color: #3b82f6;
-    margin-right: 0.75rem;
-    font-size: 1.2rem;
+    margin-right: 0.5rem;
+    font-size: 1rem;
 }
 
 .highlight {
-    color: #ef4444; /* Red for emphasis */
+    color: #ef4444;
     font-weight: 600;
 }
 
 .challenge-note {
     color: #3b82f6;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: 500;
-    margin-bottom: 1.5rem;
-    text-align: left;
+    margin-bottom: 1rem;
+    text-align: center;
 }
 
 .challenge-btn {
     display: inline-block;
     background-color: #3b82f6;
     color: white;
-    padding: 0.9rem 2rem;
+    padding: 0.75rem 1.25rem;
     text-decoration: none;
-    border-radius: 8px;
+    border-radius: 5px;
     font-weight: 600;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 6px rgba(59, 130, 246, 0.3);
+    box-shadow: 0 2px 4px rgba(59, 130, 246, 0.3);
+    font-size: 1rem;
 }
 
 .challenge-btn:hover {
     background-color: #2563eb;
     transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(59, 130, 246, 0.4);
+    box-shadow: 0 4px 8px rgba(59, 130, 246, 0.4);
 }
 
 .challenge-image {
-    flex: 1;
-    min-width: 300px;
-    text-align: right;
+    text-align: center;
 }
 
 .challenge-image img {
     max-width: 100%;
     height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* We Make IT Easy Section */
 #easy {
     background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
-    padding: 3rem 2rem;
+    padding: 1.5rem 0.5rem;
 }
 
 .easy-container {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
     background-color: #ffffff;
-    border-radius: 15px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
     overflow: hidden;
-    flex-wrap: wrap;
 }
 
 .easy-text {
-    flex: 1;
-    min-width: 300px;
-    padding-right: 2rem;
+    padding-right: 0;
+    margin-bottom: 1rem;
 }
 
 .easy-text h2 {
     color: #3b82f6;
-    font-size: 2.8rem;
+    font-size: 1.8rem;
     font-weight: 700;
-    margin-bottom: 1.5rem;
-    text-align: left;
+    margin-bottom: 1rem;
+    text-align: center;
     line-height: 1.2;
 }
 
 .easy-text p {
     color: #6b7280;
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
-    text-align: left;
-    line-height: 1.6;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    line-height: 1.5;
 }
 
 .easy-btn {
     display: inline-block;
     background-color: #3b82f6;
     color: white;
-    padding: 0.9rem 2rem;
+    padding: 0.75rem 1.25rem;
     text-decoration: none;
-    border-radius: 8px;
+    border-radius: 5px;
     font-weight: 600;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 6px rgba(59, 130, 246, 0.3);
+    box-shadow: 0 2px 4px rgba(59, 130, 246, 0.3);
+    font-size: 1rem;
 }
 
 .easy-btn:hover {
     background-color: #2563eb;
     transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(59, 130, 246, 0.4);
+    box-shadow: 0 4px 8px rgba(59, 130, 246, 0.4);
 }
 
 .easy-image {
-    flex: 1;
-    min-width: 300px;
-    text-align: right;
+    text-align: center;
 }
 
 .easy-image img {
     max-width: 100%;
     height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Cyber Resilience Section */
 #resilience {
     background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
-    padding: 3rem 2rem;
+    padding: 1.5rem 0.5rem;
 }
 
 .resilience-container {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
     background-color: #ffffff;
-    border-radius: 15px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
     overflow: hidden;
-    flex-wrap: wrap;
 }
 
 .resilience-text {
-    flex: 1;
-    min-width: 300px;
-    padding-right: 2rem;
+    padding-right: 0;
+    margin-bottom: 1rem;
 }
 
 .resilience-text h2 {
     color: #1e40af;
-    font-size: 2.8rem;
+    font-size: 1.8rem;
     font-weight: 700;
-    margin-bottom: 1.5rem;
-    text-align: left;
+    margin-bottom: 1rem;
+    text-align: center;
     line-height: 1.2;
 }
 
 .resilience-text p {
     color: #6b7280;
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
-    text-align: left;
-    line-height: 1.6;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    line-height: 1.5;
 }
 
 .resilience-btn {
     display: inline-block;
     background-color: #3b82f6;
     color: white;
-    padding: 0.9rem 2rem;
+    padding: 0.75rem 1.25rem;
     text-decoration: none;
-    border-radius: 8px;
+    border-radius: 5px;
     font-weight: 600;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 6px rgba(59, 130, 246, 0.3);
+    box-shadow: 0 2px 4px rgba(59, 130, 246, 0.3);
+    font-size: 1rem;
 }
 
 .resilience-btn:hover {
     background-color: #2563eb;
     transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(59, 130, 246, 0.4);
+    box-shadow: 0 4px 8px rgba(59, 130, 246, 0.4);
 }
 
 .resilience-image {
-    flex: 1;
-    min-width: 300px;
-    text-align: right;
+    text-align: center;
 }
 
 .resilience-image img {
     max-width: 100%;
     height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* About Us */
+#about {
+    text-align: center;
+}
+
+#about p {
+    font-size: 0.9rem;
 }
 
 /* Services */
 #services {
     background: linear-gradient(135deg, #e5e7eb 0%, #f3f4f6 100%);
-    padding: 4rem 2rem;
+    padding: 1.5rem 0.5rem;
 }
 
 #services h2 {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .service-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
+    grid-template-columns: 1fr;
+    gap: 1rem;
     position: relative;
 }
 
 .service-item {
     background-color: white;
-    padding: 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
     position: relative;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .service-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .service-item h3 a {
     color: #1e3a8a;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-bottom: 0.5rem;
 }
 
@@ -479,126 +496,100 @@ p {
 
 .service-item p {
     color: #6b7280;
-    font-size: 1rem;
-    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
 }
 
 /* Services footer text and button */
 #services > p {
     text-align: center;
     color: #6b7280;
-    font-size: 1.1rem;
-    margin-top: 2rem;
+    font-size: 0.9rem;
+    margin-top: 1rem;
 }
 
 #services .cta-btn {
     display: block;
-    margin: 2rem auto;
-}
-
-/* Service Pages */
-.service-page {
-    padding: 4rem 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
-    background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
-}
-
-.service-page h2 {
-    color: #1e3a8a;
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-}
-
-.service-page p {
-    font-size: 1.2rem;
-    color: #6b7280;
-    margin-bottom: 2rem;
-}
-
-.service-features {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-bottom: 2rem;
-}
-
-.feature {
-    background-color: white;
-    padding: 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: left;
-}
-
-.feature h3 {
-    color: #1e3a8a;
-    font-size: 1.3rem;
-    margin-bottom: 0.5rem;
-}
-
-.feature p {
-    color: #6b7280;
-    font-size: 1rem;
+    margin: 1rem auto;
 }
 
 /* Team */
+#team {
+    text-align: center;
+}
+
 #team .team-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 2rem;
+    grid-template-columns: 1fr;
+    gap: 1rem;
     text-align: center;
 }
 
 #team .team-grid div {
     background-color: white;
     padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .team-img {
     width: 100%;
-    max-width: 150px;
+    max-width: 120px;
     height: auto;
     border-radius: 50%;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+#team p {
+    font-size: 0.9rem;
 }
 
 /* Testimonials */
+#testimonials {
+    text-align: center;
+}
+
 #testimonials .testimonial-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    grid-template-columns: 1fr;
+    gap: 1rem;
     text-align: center;
 }
 
 #testimonials .testimonial-grid div {
     background-color: white;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#testimonials p {
+    font-size: 0.9rem;
 }
 
 /* Resource */
 #resource {
     background-color: #e5e7eb;
     text-align: center;
+    padding: 1.5rem 0.5rem;
 }
 
 #resource form {
     display: flex;
-    gap: 1rem;
+    flex-direction: column;
+    gap: 0.5rem;
     justify-content: center;
     margin-top: 1rem;
+    align-items: center;
 }
 
 #resource input {
     padding: 0.75rem;
     border: 1px solid #ccc;
     border-radius: 5px;
-    width: 300px;
+    width: 100%;
+    max-width: 250px;
+    font-size: 0.9rem;
 }
 
 #resource button {
@@ -608,36 +599,54 @@ p {
     padding: 0.75rem 1.5rem;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 200px;
 }
 
 /* Blog */
+#blog {
+    text-align: center;
+}
+
 #blog .blog-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    grid-template-columns: 1fr;
+    gap: 1rem;
 }
 
 #blog .blog-grid div {
     background-color: white;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     text-align: center;
 }
 
+#blog p {
+    font-size: 0.9rem;
+}
+
 /* Contact */
+#contact {
+    text-align: center;
+}
+
 #contact form {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    max-width: 500px;
-    margin: 2rem auto;
+    gap: 0.5rem;
+    max-width: 100%;
+    margin: 1rem auto;
+    padding: 0 0.5rem;
 }
 
 #contact input, #contact select, #contact textarea {
     padding: 0.75rem;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-size: 0.9rem;
+    width: 100%;
 }
 
 #contact button {
@@ -648,6 +657,7 @@ p {
     cursor: pointer;
     border-radius: 5px;
     transition: background-color 0.3s;
+    font-size: 1rem;
 }
 
 #contact button:hover {
@@ -657,9 +667,15 @@ p {
 /* Sticky CTA */
 .sticky-cta {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 10px;
+    right: 10px;
     z-index: 100;
+}
+
+.sticky-cta .cta-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    min-width: 120px;
 }
 
 /* Footer */
@@ -667,31 +683,88 @@ footer {
     background-color: #1e3a8a;
     color: white;
     text-align: center;
-    padding: 2rem;
+    padding: 1rem;
+    font-size: 0.9rem;
 }
 
 footer a {
     color: #f97316;
     text-decoration: none;
-    margin: 0 0.5rem;
+    margin: 0 0.25rem;
+}
+
+/* Service Pages */
+.service-page {
+    padding: 2rem 0.5rem;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+}
+
+.service-page h2 {
+    color: #1e3a8a;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.service-page p {
+    font-size: 0.9rem;
+    color: #6b7280;
+    margin-bottom: 1rem;
+}
+
+.service-features {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.feature {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.feature h3 {
+    color: #1e3a8a;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.feature p {
+    color: #6b7280;
+    font-size: 0.9rem;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        gap: 1rem;
+    .menu-toggle {
+        display: block;
     }
 
-    nav ul {
+    .nav-menu {
+        display: none;
+        width: 100%;
         flex-direction: column;
-        text-align: center;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #1e3a8a;
+        padding: 1rem 0;
+    }
+
+    .nav-menu.active {
+        display: flex;
     }
 
     .dropdown-content {
         position: static;
         box-shadow: none;
-        background-color: transparent;
+        background-color: #1e3a8a;
         display: none;
     }
 
@@ -701,10 +774,7 @@ footer a {
 
     .nav-contact {
         text-align: center;
-    }
-
-    #home h2 {
-        font-size: 1.8rem;
+        margin-top: 1rem;
     }
 
     .challenge-container, .easy-container, .resilience-container {
@@ -718,11 +788,15 @@ footer a {
 
     .challenge-image, .easy-image, .resilience-image {
         text-align: center;
-        margin-top: 2rem;
+        margin-top: 1rem;
     }
 
-    section {
-        padding: 2rem 1rem;
+    .service-grid, .team-grid, .testimonial-grid, .blog-grid, .service-features {
+        grid-template-columns: 1fr;
+    }
+
+    .service-page h2 {
+        font-size: 1.5rem;
     }
 
     #resource form {
@@ -733,20 +807,15 @@ footer a {
     #resource input {
         width: 100%;
     }
+}
 
-    .challenge-text h2, .easy-text h2, .resilience-text h2 {
-        font-size: 2.2rem;
+/* Mobile Menu Toggle (JavaScript will handle this) */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
     }
 
-    .challenge-list li, .easy-text p, .resilience-text p {
-        font-size: 1rem;
-    }
-
-    .service-grid, .service-features {
-        grid-template-columns: 1fr;
-    }
-
-    .service-page h2 {
-        font-size: 2rem;
+    .nav-menu.active {
+        display: flex;
     }
 }

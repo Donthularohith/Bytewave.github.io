@@ -6,6 +6,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         target.scrollIntoView({
             behavior: 'smooth'
         });
+        // Close mobile menu after clicking a link
+        if (window.innerWidth <= 768) {
+            document.querySelector('.nav-menu').classList.remove('active');
+        }
     });
 });
 
@@ -23,4 +27,9 @@ document.getElementById('ebook-form').addEventListener('submit', function (e) {
     alert(`Thank you! A download link for the eBook has been sent to ${email}.`);
     this.reset();
     // In a real scenario, trigger a download of images/ebook.pdf here
+});
+
+// Mobile Menu Toggle
+document.querySelector('.menu-toggle').addEventListener('click', function () {
+    document.querySelector('.nav-menu').classList.toggle('active');
 });
