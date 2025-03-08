@@ -17,8 +17,17 @@
             </div>
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Services</a>
+                    <div class="dropdown-content">
+                        <a href="services/it-services.html">IT Services</a>
+                        <a href="services/cybersecurity.html">Cybersecurity</a>
+                        <a href="services/web-development.html">Web Development</a>
+                        <a href="services/remote-it-services.html">Remote IT Services</a>
+                        <a href="services/cloud-computing.html">Cloud Computing</a>
+                        <a href="services/risk-assessment.html">Risk Assessment</a>
+                    </div>
+                </li>
                 <li><a href="#team">Team</a></li>
                 <li><a href="#testimonials">Testimonials</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -30,7 +39,6 @@
         </nav>
     </header>
 
-    
     <!-- Homepage -->
     <section id="home">
         <img src="images/banner.jpg" alt="Cybersecurity Banner" class="banner">
@@ -44,19 +52,7 @@
         <a href="#contact" class="cta-btn">Request a Free Consultation</a>
         <a href="#contact" class="risk-btn">Get a Free Cybersecurity Assessment</a>
     </section>
-   <!-- Cyber Resilience Section -->
-   <section id="resilience">
-    <div class="resilience-container">
-        <div class="resilience-text">
-            <h2>ACHIEVE CYBER RESILIENCE.<br>PROTECT YOUR BUSINESS.</h2>
-            <p>Survive and thrive: Shield your business from hacking with all-inclusive, flat-fee IT services.</p>
-            <a href="#services" class="resilience-btn">LEARN MORE</a>
-        </div>
-        <div class="resilience-image">
-            <img src="images/resilience-banner.jpg" alt="Team Collaboration">
-        </div>
-    </div>
-    </section>
+
     <!-- Challenges Section -->
     <section id="challenges">
         <div class="challenge-container">
@@ -103,7 +99,19 @@
         </div>
     </section>
 
- 
+    <!-- Cyber Resilience Section -->
+    <section id="resilience">
+        <div class="resilience-container">
+            <div class="resilience-text">
+                <h2>ACHIEVE CYBER RESILIENCE.<br>PROTECT YOUR BUSINESS.</h2>
+                <p>Survive and thrive: Shield your business from hacking with all-inclusive, flat-fee IT services.</p>
+                <a href="services/cybersecurity.html" class="resilience-btn">LEARN MORE</a>
+            </div>
+            <div class="resilience-image">
+                <img src="images/resilience-banner.jpg" alt="Team Collaboration">
+            </div>
+        </div>
+    </section>
 
     <!-- About Us -->
     <section id="about">
@@ -117,25 +125,29 @@
     <section id="services">
         <h2>Our Expertise</h2>
         <div class="service-grid">
-            <div>
-                <h3>Cybersecurity Auditing</h3>
-                <p>In-depth assessments to uncover vulnerabilities and ensure compliance.</p>
+            <div class="service-item">
+                <h3><a href="services/it-services.html">IT Services</a></h3>
+                <p>Comprehensive IT support to optimize your infrastructure, reduce downtime, and enhance productivity with tailored solutions.</p>
             </div>
-            <div>
-                <h3>Penetration Testing</h3>
-                <p>Real-world attack simulations to strengthen your defenses.</p>
+            <div class="service-item">
+                <h3><a href="services/cybersecurity.html">Cybersecurity</a></h3>
+                <p>Robust protection against cyber threats with auditing, penetration testing, and continuous monitoring.</p>
             </div>
-            <div>
-                <h3>Web Designing</h3>
-                <p>Creative, user-centric designs that captivate your audience.</p>
+            <div class="service-item">
+                <h3><a href="services/web-development.html">Web Development</a></h3>
+                <p>Custom-built, secure, and scalable websites using modern technologies to boost your online presence.</p>
             </div>
-            <div>
-                <h3>Web Developing</h3>
-                <p>Robust, secure websites built with the latest technologies.</p>
+            <div class="service-item">
+                <h3><a href="services/remote-it-services.html">Remote IT Services</a></h3>
+                <p>24/7 remote support and management to keep your systems running smoothly from anywhere.</p>
             </div>
-            <div>
-                <h3>Secure Website Solutions</h3>
-                <p>End-to-end website builds with integrated security features.</p>
+            <div class="service-item">
+                <h3><a href="services/cloud-computing.html">Cloud Computing</a></h3>
+                <p>Scalable cloud solutions for storage, computing, and backup to future-proof your business.</p>
+            </div>
+            <div class="service-item">
+                <h3><a href="services/risk-assessment.html">Risk Assessment</a></h3>
+                <p>Thorough evaluations to identify and mitigate risks, ensuring compliance and security.</p>
             </div>
         </div>
         <p>All-inclusive services with no hidden fees.</p>
@@ -233,11 +245,12 @@
             <input type="email" placeholder="Email" required>
             <select required>
                 <option value="">Service Interested In</option>
-                <option value="auditing">Cybersecurity Auditing</option>
-                <option value="testing">Penetration Testing</option>
-                <option value="design">Web Designing</option>
-                <option value="development">Web Developing</option>
-                <option value="website">Full Website Build</option>
+                <option value="it-services">IT Services</option>
+                <option value="cybersecurity">Cybersecurity</option>
+                <option value="web-development">Web Development</option>
+                <option value="remote-it-services">Remote IT Services</option>
+                <option value="cloud-computing">Cloud Computing</option>
+                <option value="risk-assessment">Risk Assessment</option>
             </select>
             <textarea placeholder="Message" rows="5" required></textarea>
             <button type="submit">Send Message</button>
